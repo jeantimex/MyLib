@@ -1,6 +1,7 @@
 # MyLib
 
 [![CI Status](https://img.shields.io/travis/jeantimex/MyLib.svg?style=flat)](https://travis-ci.org/jeantimex/MyLib)
+[![codecov](https://codecov.io/gh/jeantimex/MyLib/branch/master/graph/badge.svg)](https://codecov.io/gh/jeantimex/MyLib)
 [![Version](https://img.shields.io/cocoapods/v/MyLib.svg?style=flat)](https://cocoapods.org/pods/MyLib)
 [![License](https://img.shields.io/cocoapods/l/MyLib.svg?style=flat)](https://cocoapods.org/pods/MyLib)
 [![Platform](https://img.shields.io/cocoapods/p/MyLib.svg?style=flat)](https://cocoapods.org/pods/MyLib)
