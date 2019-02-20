@@ -4,7 +4,10 @@
 
 language: objective-c
 
-osx_image: xcode10.1
+matrix:
+  include:
+    - osx_image: xcode10.1
+
 env:
   matrix:
    - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone 7'
