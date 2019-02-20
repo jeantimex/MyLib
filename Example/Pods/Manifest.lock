@@ -1,8 +1,17 @@
 PODS:
   - MyLib (0.1.0)
+  - Nimble (7.3.4)
+  - Quick (1.3.4)
 
 DEPENDENCIES:
   - MyLib (from `../`)
+  - Nimble (~> 7.3.4)
+  - Quick (~> 1.3.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
 
 EXTERNAL SOURCES:
   MyLib:
@@ -10,7 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MyLib: 98798d3f653ae99f3df13514a9384aebc29bea8c
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: f4f7f063c524394c73ed93ac70983c609805d481
 
-PODFILE CHECKSUM: ef8c1a580d49c667424e2abce01e2ac4a4f5d1b6
+PODFILE CHECKSUM: 27a43597efd0cf15da93168345d58afc6de74343
 
 COCOAPODS: 1.6.0
