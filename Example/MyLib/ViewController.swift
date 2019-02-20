@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import MyLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let myLib = MyLib(x: 0, y: 0)
+        let c = myLib.add(a: 1, b: 2)
+        print(c)
     }
 
     override func didReceiveMemoryWarning() {
