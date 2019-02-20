@@ -4,8 +4,7 @@
 
 env:
   matrix:
-    - DEST='platform=iOS Simulator,name=iPhone 7,OS=12.1'
-    - DEST='platform=iOS Simulator,name=iPhone X,OS=12.1'
+   - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone 7'
 
 osx_image: xcode10.1
 language: objective-c
@@ -15,5 +14,5 @@ before_install:
 - gem install cocoapods # Since Travis is not always on latest version
 #  - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/MyLib.xcworkspace -scheme MyLib-Example -destination $DEST ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/MyLib.xcworkspace -scheme MyLib-Example -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
