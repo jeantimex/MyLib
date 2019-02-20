@@ -8,6 +8,7 @@
 
 import Quick
 import Nimble
+import MyLib
 
 class QuickTests: QuickSpec {
 
@@ -15,7 +16,8 @@ class QuickTests: QuickSpec {
         describe("these will pass") {
             
             it("can do maths") {
-                expect(1) == 1
+                let myLib = MyLib(x: 0, y: 0)
+                expect(myLib.add(a: 1, b: 1)) == 2
             }
             
             it("can read") {
