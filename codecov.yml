@@ -1,2 +1,4 @@
 ignore:
-    - "Example/Pods/.*"
+    - "Example/Pods/Nimble/.*"
+    - "Example/Pods/Quick/.*"
+    - "Example/MyLib/.*"
