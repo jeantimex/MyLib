@@ -8,7 +8,7 @@ osx_image: xcode10.1
 env:
   matrix:
    - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone 7'
-   - TEST_SDK=iphonesimulator12.1 OS=9.3 NAME='iPhone 6s'
+   # - TEST_SDK=iphonesimulator12.1 OS=9.3 NAME='iPhone 6s'
 
 # cache: cocoapods
 podfile: Example/Podfile
@@ -16,7 +16,7 @@ before_install:
   - gem install cocoapods # Since Travis is not always on latest version
 #  - pod install --project-directory=Example
 script:
-  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/MyLib.xcworkspace -scheme MyLib -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES | xcpretty
+  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/MyLib.xcworkspace -scheme MyLib -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
   - pod lib lint
 after_success:
   - bash <(curl -s https://codecov.io/bash)
