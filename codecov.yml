@@ -1,5 +1,0 @@
-ignore:
-    - "Example/Pods/Nimble/.*"
-    - "Example/Pods/Quick/.*"
-    - "Example/MyLib/AppDelegate.swift"
-    - "Example/MyLib/ViewController.swift"
